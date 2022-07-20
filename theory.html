@@ -1,0 +1,63 @@
+<!-- Priority:
+inline style, id, class, element
+0, 0, 0, 0 --- default
+then calculate if present or not: present then 1 else 0
+
+!important --- highest priority but must be kept as last option
+* --- universal selector --- lowest priority
+
+example: -->
+
+<html>
+    <head>
+        <style>
+            p{
+            background-color:antiquewhite;
+            color:black
+        }
+        p#a{
+            background-color: cadetblue;
+            color: aliceblue;
+        }
+        p#a.first{
+            background-color: darkgoldenrod;
+            color: cyan;
+        }
+        p.first{
+            background-color: darkgrey;
+            color:chartreuse;
+        }
+
+        </style>
+        
+    </head>
+    <body>
+        <p id="a" class="first">This is first</p>
+        
+
+    </body>
+
+
+<!-- 
+1st: 0,0,0,2
+2nd: 0,1,0,2
+3rd: 0,1,1,2
+4th: 0,0,1,2 
+check 1 serially for all
+e.g. 1st 0,2,0,0
+     2nd 0,1,1,2 --- priority to 1st as id is already greater
+
+if neutral for all then the last one is prioratized
+
+if equal number of 1's, then the priority line(i.e. 1.inline style 2.id 3.class 4.element)
+
+homework-link multiple cc and check priority --- flex  -->
+
+<div class="card.container">
+    <div class="card_title card--bg-white"></div>
+
+</div>
+
+
+        
+                
