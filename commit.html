@@ -3,7 +3,9 @@
         <title>GitHub</title>
         <style>
         *{
-            margin: 0px, 0px;
+            margin: 0;
+            padding: 0;
+            
         }
         .header{
             position:static;
@@ -20,7 +22,6 @@
         }
         .box1{
             margin: 2px;
-            box-sizing: border-box;
             width: 40%;
             height: 35%;
             background-color:beige;
@@ -30,13 +31,13 @@
         }
         .box2{
             margin: 2px;
-            box-sizing: border-box;
             width: 40%;
             height: 35%;
             background-color:beige;
             border-style: dotted;
             border-color: burlywood;
-            overflow: auto;
+            overflow: scroll;
+            
         }
         .footer{
             position: fixed;
@@ -53,42 +54,46 @@
 
 
     <body>
-        <div class="header">
-            <img id="a" src="gitlogo.png" alt="logo" height="40" width="45">
-            <h1>GitHub</h1>
-            <p>GitHub for Web Development</p>
+        <div class="container">
+            <div class="header">
+                <img id="a" src="gitlogo.png" alt="logo" height="40" width="45">
+                <h1>GitHub</h1>
+                <p>GitHub for Web Development</p>
+            </div>
+            <div class="box1">
+                <h3>What is Web Development?</h3><br> <br>
+                <p>Web development, also known as website development, refers to the tasks associated with creating, building, and 
+                   maintaining websites and web applications that run online on a browser. It may, however, also include web design, 
+                   web programming, and database management. Web development is closely related to the job of designing the features and 
+                   functionality of apps (web design). The term development is usually reserved for the actual construction of these things 
+                   (that is to say, the programming of sites).</p> <br> <br>
+                <p>The most common programming languages involved in web development are:</p>
+                <ul>
+                    <li>HTML (Hypertext Markup Language)</li>
+                    <li>CSS (Cascading Style Sheet)</li>
+                    <li>Javascript</li>
+                </ul>
+            </div>
+            <div class="box2">
+                <h3>What is Git and GitHub?</h3> <br> <br>
+                <p>A quick aside: git and GitHub are not the same thing. Git is an open-source, version control tool created in 2005 by 
+                    developers working on the Linux operating system; GitHub is a company founded in 2008 that makes tools which integrate 
+                    with git. You do not need GitHub to use git, but you cannot use GitHub without using git. There are many other 
+                    alternatives to GitHub, such as GitLab, BitBucket, and “host-your-own” solutions such as gogs and gittea. All of these 
+                    are referred to in git-speak as “remotes”, and all are completely optional. You do not need to use a remote to use git, 
+                    but it will make sharing your code with others easier.</p> <br> <br>
+                <p>Basic Commands in GitHub:</p>
+                <ul>
+                    <li>git init: to initialize a git repository in the root of the folder</li>
+                    <li>git status:  to see which files git knows exist</li>
+                    <li>git fetch origin</li>
+                </ul>
+            </div>
+            
+            <div class="footer">
+                <h2>Thank You!</h2>
+            </div>
         </div>
-        <div class="box1">
-            <h3>What is Web Development?</h3>
-            <p>Web development, also known as website development, refers to the tasks associated with creating, building, and 
-               maintaining websites and web applications that run online on a browser. It may, however, also include web design, 
-               web programming, and database management. Web development is closely related to the job of designing the features and 
-               functionality of apps (web design). The term development is usually reserved for the actual construction of these things 
-               (that is to say, the programming of sites).</p>
-            <p>The most common programming languages involved in web development are:</p>
-            <ul>
-                <li>HTML (Hypertext Markup Language)</li>
-                <li>CSS (Cascading Style Sheet)</li>
-                <li>Javascript</li>
-            </ul>
-        </div>
-        <div class="box2">
-            <h3>What is Git and GitHub?</h3>
-            <p>A quick aside: git and GitHub are not the same thing. Git is an open-source, version control tool created in 2005 by 
-                developers working on the Linux operating system; GitHub is a company founded in 2008 that makes tools which integrate 
-                with git. You do not need GitHub to use git, but you cannot use GitHub without using git. There are many other 
-                alternatives to GitHub, such as GitLab, BitBucket, and “host-your-own” solutions such as gogs and gittea. All of these 
-                are referred to in git-speak as “remotes”, and all are completely optional. You do not need to use a remote to use git, 
-                but it will make sharing your code with others easier.</p>
-            <p>Basic Commands in GitHub:</p>
-            <ul>
-                <li>git init: to initialize a git repository in the root of the folder</li>
-                <li>git status:  to see which files git knows exist</li>
-                <li>git fetch origin</li>
-            </ul>
-        </div>
-        <div class="footer">
-            <h2>Thank You!</h2>
-        </div>
+        
     </body>
 </html>
